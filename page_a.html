@@ -10,14 +10,19 @@
   </head>
   <body>
     <h1>Page A</h1>
+	<div>
+	  <button
+		hx-push-url="page_a_frag"
+		hx-get="fragment1.html"
+		hx-target="#container"
+	  >
+		Click me 1st
+	  </button>
+	</div>
     <div id="container">
-      <button
-        hx-push-url="page_a_frag"
-        hx-get="fragment1.html"
-        hx-target="#container"
-      >
-        Load Fragment 1
-      </button>
     </div>
+	
+	<a href="page_b">Go to page B</a>
+
   </body>
 </html>
