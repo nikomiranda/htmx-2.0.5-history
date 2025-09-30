@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Htmx history issue (Page A)</title>
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js"></script>
-    <meta name="htmx-config" content='{"refreshOnHistoryMiss":"true"}' />
+    <meta name="htmx-config" content='{"refreshOnHistoryMiss":"true"}'>
   </head>
   <body>
     <h1>Page A</h1>
@@ -16,12 +16,13 @@
 		hx-get="fragment1.html"
 		hx-target="#container"
 	  >
-		Click me 1st
+		Click me before going to page B
 	  </button>
 	</div>
+	<br/><br/>
     <div id="container">
     </div>
-	
+	<br/><br/>
 	<a href="page_b">Go to page B</a>
 
   </body>
